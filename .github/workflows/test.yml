@@ -11,6 +11,15 @@ on:
         description: 'Path to the output file'
         required: false
         default: 'output.cs'
+      edit-mode:
+        description: 'Edit Mode'
+        required: false
+        default: 'sa_sbl'
+        type: choice
+        options:
+          - sa_sbl
+          - vc_sbl
+          - gta3_sbl
 
 jobs:
   compile:
